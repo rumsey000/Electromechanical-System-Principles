@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ParamWithValueList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <version>20080502</version>
+  <parameterTypes>
+    <ParamType>
+      <typeName>Inventor</typeName>
+      <typeCode>0</typeCode>
+    </ParamType>
+    <ParamType>
+      <typeName>String</typeName>
+      <typeCode>1</typeCode>
+    </ParamType>
+    <ParamType>
+      <typeName>Boolean</typeName>
+      <typeCode>2</typeCode>
+    </ParamType>
+  </parameterTypes>
+  <parameters>
+    <ParamWithValue>
+      <name>module</name>
+      <typeCode>mm/ul</typeCode>
+      <value>0.5 mm/ul</value>
+      <comment />
+      <isKey>false</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>teeth_number</name>
+      <typeCode>ul</typeCode>
+      <value>20 ul</value>
+      <comment />
+      <isKey>false</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>pitch_diameter</name>
+      <typeCode>mm</typeCode>
+      <value>module * teeth_number</value>
+      <comment />
+      <isKey>false</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>whole_depth</name>
+      <typeCode>mm</typeCode>
+      <value>2.25 ul * module</value>
+      <comment />
+      <isKey>false</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>tooth_thickness</name>
+      <typeCode>mm</typeCode>
+      <value>PI / 2 ul * module</value>
+      <comment />
+      <isKey>false</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>circular_pitch</name>
+      <typeCode>mm</typeCode>
+      <value>PI * module</value>
+      <comment />
+      <isKey>false</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>addendum</name>
+      <typeCode>mm</typeCode>
+      <value>1.00 ul * module</value>
+      <comment />
+      <isKey>false</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>dedendum</name>
+      <typeCode>mm</typeCode>
+      <value>1.25 ul * module</value>
+      <comment />
+      <isKey>false</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>addendum_diameter</name>
+      <typeCode>mm</typeCode>
+      <value>pitch_diameter + 2 ul * addendum</value>
+      <comment />
+      <isKey>false</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>dedendum_diameter</name>
+      <typeCode>mm</typeCode>
+      <value>pitch_diameter - 2 ul * dedendum</value>
+      <comment />
+      <isKey>false</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>pressure_angle</name>
+      <typeCode>deg</typeCode>
+      <value>20 deg</value>
+      <comment />
+      <isKey>false</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>base_diameter</name>
+      <typeCode>mm</typeCode>
+      <value>pitch_diameter * cos(pressure_angle)</value>
+      <comment />
+      <isKey>false</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>fillet_radius</name>
+      <typeCode>mm</typeCode>
+      <value>0.38 ul * module</value>
+      <comment />
+      <isKey>false</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>rack_tooth_number</name>
+      <typeCode>ul</typeCode>
+      <value>20 ul</value>
+      <comment />
+      <isKey>false</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>rack_length</name>
+      <typeCode>mm</typeCode>
+      <value>circular_pitch * ( rack_tooth_number + 1 ul )</value>
+      <comment />
+      <isKey>false</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>rack_dedendum</name>
+      <typeCode>mm</typeCode>
+      <value>0.25 ul * module</value>
+      <comment />
+      <isKey>false</isKey>
+    </ParamWithValue>
+  </parameters>
+</ParamWithValueList>
